@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+
+.container {
+  position: relative;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.box {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 50%;
+  animation-name: ozgar;
+  /* animation-name -- animatsiya nomi */
+
+  animation-duration: 1s;
+  /* animation-duration -- animatsiya davomiyligi */
+
+  animation-iteration-count: infinite;
+  /* animation-iteration-count  -- animatsiya takrorlanishi */
+
+  /* animation-timing-function: linear; */
+  /* animation-timing-function  -- animatsiya bir xil ketishi */
+
+  /* animation-delay: 10s; */
+
+  /* animation-delay -- animatsiya kutib turishi */
+
+  /* animation-direction: alternate; */
+
+
+}
+
+/* .box:hover {
+  background-color: red;
+} */
+
+.plane {
+    /* animation-name: parrak;
+  animation-duration: .1s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+}
+
+
+
+.parrak {
+  position: absolute;
+  top: 200px;
+  left: 480px;
+
+  animation-name: parrak;
+
+  animation-duration: .1s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes parrak {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes ozgar  {
+  
+  0% {
+
+    transform: translate(0);
+  }
+
+  25% {
+ 
+    transform: translate(500px, 0);
+  }
+
+  50% {
+
+    transform: translate(500px, 500px);
+  }
+
+
+75% {
+
+   transform: translate(0, 500px);
+}
+
+
+  100% {
+
+    transform: translate(0);
+  }
+
+
+}
+
+
+
+
